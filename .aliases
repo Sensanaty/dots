@@ -1,0 +1,9 @@
+alias cat="bat"
+alias ls="exa -laF --icons --group-directories-first"
+
+export EDITOR="micro"
+
+alias stashpull="git stash && git pull && git stash pop"
+dirtouch() { mkdir -p "$(dirname "$1")" && touch "$1"; }
+export PATH="$HOME/.emacs.d/bin:$PATH"
+alias emacs="emacs -nwq"

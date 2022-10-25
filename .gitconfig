@@ -1,0 +1,24 @@
+[user]
+	name = Sensanaty
+	email = salevic@lu-ka.me
+[core]
+	excludesfile = /Users/sensanaty/.gitignore
+	pager = delta
+	editor = subl -w -n
+	autocrlf = input
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictStyle = diff3
+[diff]
+	colorMoved = default
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defeaultBranch = master
+	defaultBranch = master
